@@ -32,8 +32,6 @@ layer {
   }
 }
 
-#layer { name: "bn_d0b" type: "BatchNorm" bottom: "d0b" top: "d0b"
-#  param {lr_mult: 0} param {lr_mult: 0} param {lr_mult: 0}}
 
 
 layer {
@@ -66,8 +64,6 @@ layer {
   }
 }
 
-#layer { name: "bn_d0c" type: "BatchNorm" bottom: "d0c" top: "d0c"
-#  param {lr_mult: 0} param {lr_mult: 0} param {lr_mult: 0}}
 
 
 layer {
@@ -111,8 +107,6 @@ layer {
   }
 }
 
-#layer { name: "bn_d1b" type: "BatchNorm" bottom: "d1b" top: "d1b"
-#  param {lr_mult: 0} param {lr_mult: 0} param {lr_mult: 0}}
 
 
 layer {
@@ -144,9 +138,6 @@ layer {
     engine: CAFFE
   }
 }
-
-#layer { name: "bn_d1c" type: "BatchNorm" bottom: "d1c" top: "d1c"
-#  param {lr_mult: 0} param {lr_mult: 0} param {lr_mult: 0}}
 
 
 
@@ -192,10 +183,6 @@ layer {
 }
 
 
-#layer { name: "bn_d2b" type: "BatchNorm" bottom: "d2b" top: "d2b"
-#  param {lr_mult: 0} param {lr_mult: 0} param {lr_mult: 0}}
-
-
 
 
 layer {
@@ -227,11 +214,6 @@ layer {
     engine: CAFFE
   }
 }
-
-
-
-#layer { name: "bn_d2c" type: "BatchNorm" bottom: "d2c" top: "d2c"
-#  param {lr_mult: 0} param {lr_mult: 0} param {lr_mult: 0}}
 
 
 
@@ -278,9 +260,6 @@ layer {
 }
 
 
-#layer { name: "bn_d3b" type: "BatchNorm" bottom: "d3b" top: "d3b"
-#  param {lr_mult: 0} param {lr_mult: 0} param {lr_mult: 0}}
-
 
 
 layer {
@@ -313,9 +292,6 @@ layer {
   }
 }
 
-
-#layer { name: "bn_d3c" type: "BatchNorm" bottom: "d3c" top: "d3c"
-#  param {lr_mult: 0} param {lr_mult: 0} param {lr_mult: 0}}
 
 
 
@@ -365,9 +341,6 @@ layer {
 }
 
 
-#layer { name: "bn_d4b" type: "BatchNorm" bottom: "d4b" top: "d4b"
-#  param {lr_mult: 0} param {lr_mult: 0} param {lr_mult: 0}}
-
 
 
 layer {
@@ -400,9 +373,6 @@ layer {
   }
 }
 
-
-#layer { name: "bn_d4c" type: "BatchNorm" bottom: "d4c" top: "d4c"
-#  param {lr_mult: 0} param {lr_mult: 0} param {lr_mult: 0}}
 
 
 
