@@ -13,9 +13,22 @@ Neural Networks and 3D Conditional Random Fields
 
 If you have used these models in your research please use the following BibTeX for citation :
 ```
-@article{liverlesionfcn,
-  title={Automatic Liver and Lesion Segmentation in CT Using Cascaded Fully Convolutional Neural Networks and 3D Conditional Random Fields},
-  author={Christ, Patrick Ferdinand and Elshaer, Mohamed Ezzeldin A and Ettlinger, Florian and Tatavarty, Sunil and Bickel, Marc and Bilic, Patrick and Rempfler, Markus and Armbruster, Marco and Hofmann, Felix and Menze, Bjoern and others}
+@Inbook{Christ2016,
+title="Automatic Liver and Lesion Segmentation in CT Using Cascaded Fully Convolutional Neural Networks and 3D Conditional Random Fields",
+author="Christ, Patrick Ferdinand and Elshaer, Mohamed Ezzeldin A. and Ettlinger, Florian and Tatavarty, Sunil and Bickel, Marc and Bilic, Patrick and Rempfler, Markus and Armbruster, Marco and Hofmann, Felix and D'Anastasi, Melvin and Sommer, Wieland H. and Ahmadi, Seyed-Ahmad and Menze, Bjoern H.",
+editor="Ourselin, Sebastien
+and Joskowicz, Leo
+and Sabuncu, Mert R.
+and Unal, Gozde
+and Wells, William",
+bookTitle="Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2016: 19th International Conference, Athens, Greece, October 17-21, 2016, Proceedings, Part II",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="415--423",
+isbn="978-3-319-46723-8",
+doi="10.1007/978-3-319-46723-8_48",
+url="http://dx.doi.org/10.1007/978-3-319-46723-8_48"
 }
 ```
 
@@ -32,6 +45,7 @@ An illustration of the pipeline is shown below :
 
 <img src="https://dl.dropboxusercontent.com/u/28351742/CascadedFCN/CascadedFCN_Pipeline.png" width="512" alt="Illustration of the CascadedFCN pipeline">
 
+For detailed Information have a look in our presentation [Detailed Description](Cascaded-FCN.pdf)
 
 ### License 
 
