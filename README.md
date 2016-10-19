@@ -1,5 +1,5 @@
 # Cascaded-FCN #
-This repository contains the pre-trained models for a Cascaded-FCN that segments the liver and its lesions out of axial CT images.
+This repository contains the pre-trained models for a Cascaded-FCN that segments the liver and its lesions out of axial CT images and a python wrapper for dense 3D Conditional Random Fields 3D CRFs.
 
 
 This work was published in MICCAI 2016 paper ([arXiv link](https://arxiv.org/abs/1610.02177)) titled : 
@@ -42,6 +42,9 @@ An illustration of the pipeline is shown below :
 <img src="https://dl.dropboxusercontent.com/u/28351742/CascadedFCN/CascadedFCN_Pipeline.png" width="512" alt="Illustration of the CascadedFCN pipeline">
 
 For detailed Information have a look in our [presentation](Cascaded-FCN.pdf)
+
+### 3D Conditional Random Field 3DCRF
+You can find the 3D CRF at [3DCRF-python](3DCRF-python). Please follow the installation description in the [Readme](3DCRF-python/readme.md).
 
 ### License 
 
