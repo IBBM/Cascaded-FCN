@@ -44,7 +44,7 @@ An illustration of the pipeline is shown below :
 For detailed Information have a look in our [presentation](Cascaded-FCN.pdf)
 
 ### 3D Conditional Random Field 3DCRF
-You can find the 3D CRF at [3DCRF-python](3DCRF-python). Please follow the installation description in the [Readme](3DCRF-python/readme.md).
+You can find the 3D CRF at [3DCRF-python](https://github.com/mbickel/DenseInferenceWrapper). Please follow the installation description in the [Readme](https://github.com/mbickel/DenseInferenceWrapper/blob/master/readme.md).
 
 ### License 
 
