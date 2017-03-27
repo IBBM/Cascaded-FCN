@@ -1,5 +1,5 @@
 ## Link to download weights file ##
-[step1_weights.caffemodel](https://dl.dropboxusercontent.com/u/28351742/CascadedFCN/step1_weights.caffemodel)
+[step1_weights.caffemodel](https://www.dropbox.com/s/aoykiiuu669igxa/step1_weights.caffemodel?dl=1)
 
 ### Inference for Step1 of the Cascaded-FCN model ###
 
