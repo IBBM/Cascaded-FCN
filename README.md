@@ -9,6 +9,15 @@ Automatic Liver and Lesion Segmentation in CT Using Cascaded Fully Convolutional
 Neural Networks and 3D Conditional Random Fields
 ```
 
+### Quick Start ###
+If you want to use our code we offer an docker image, which runs our code and has all dependencies installed including the correct caffe version. After having installed docker and nvidia docker:
+```
+sudo GPU=0 nvidia-docker run -v $(pwd):/data -P --net=host --workdir=/Cascaded-FCN -ti --privileged patrickchrist/cascadedfcn bash
+```
+And than start jupyter notebook and browse to localhost:8888
+```
+jupyter notebook
+```
 ### Citation ###
 
 If you have used these models in your research please use the following BibTeX for citation :
