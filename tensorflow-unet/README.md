@@ -47,23 +47,23 @@ Values are configurable in the main code file.
 2. In order to obtain the training-data, please register at http://lits-challenge.com and follow the download instructions
 3. Configure the train and test directory paths in the experiment.py code-file (todo, configurable)
 4. Uncomment the liver configuration in the experiment.py file and comment the lesion configuration
-''' 
+```bash
 Run python experiment.py --logdir /path/which/exists
-'''
+```
 5. Train the network until convergence (you can check the statistics during training by running tensorboard --logdir /path/which/exists)
 6. Take the best model (select in the tensorboard dice-score summary) and write it down
 7. Uncomment the lesion configuration in the experiment.py file and comment the liver configuration
 8.
-''' 
+```bash
 Run python experiment.py --logdir /path/which/exists
-'''
+```
 9.
-'''
+```bash
 Run python generate_predictions.py --data_directory test_directory --out_postfix '__prediction' --model /path/which/exists/Run_x_liver/snapshots/unet-model-*bestmodelwithoutindexending* --liver 1
-'''
-'''
+```
+```bash
 Run python generate_predictions.py --data_directory test_directory --out_postfix '__prediction_les' --model /path/which/exists/Run_x_lesion/snapshots/unet-model-*bestmodelwithoutindexending*
-'''
+```
 10. Take the *__prediction_les* files and move them to a different directory
 11. Zip the with the -j flag
 12. Upload them on the list-challenge website and run the result
