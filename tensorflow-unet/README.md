@@ -7,6 +7,12 @@ The network being used in the source-code is derived from the paper ([arXiv link
 ```
 AUTOMATIC LIVER LESION SEGMENTATION USING A DEEP CONVOLUTIONAL NEURAL NETWORK METHOD
 ```
+
+### The network being used (small alterations applied):
+![alt text](https://raw.githubusercontent.com/IBBM/Cascaded-FCN/tensorflow-implementation/tensorflow-unet/wiki/network.png)
+
+This network can take multiple neighboring axial slices as an input. The inputs are exclusively gray-scale images. The segmentation is learned with the middle label. The benefit of taking multiple slices is that the spatial information does not get lost. For further information on the network, please read the provided paper.
+
 ### Description ###
 This work uses 2 cascaded UNETs, 
 
@@ -14,15 +20,24 @@ This work uses 2 cascaded UNETs,
  2. In step2 another UNET takes an enlarged liver slice and segments its lesions.
 
 #### Liver Network
-Input: 400x400 CT-image (additionally 400x400 label-map during training - lesions and livers are merged, downsized from 512x512)
-Output: 400x400 Label-Probability-Map
-Batch-Size: 4
-Neighboring Slices: 1
+*Input: 400x400 CT-image (additionally 400x400 label-map during training - lesions and livers are merged, downsized from 512x512)
+*Output: 400x400 Label-Probability-Map
+*Batch-Size: 4
+*Neighboring Slices: 1
+*Augmentations: Rotation, Zoom, Translation
+*Postprocessing before saving to .nii file: 
+1. Only the largest connected labeled component is kept in the 3d volume which should always be the liver.
+2. Small segmentations (<16px area) are discarded
+3. Smoothing of the output probability map is applied
 
 #### Lesion Network
-Input: 256*256 CT-image (additionally 256*256 label-map during training, downsized from 512x512)
-Output: 256*256 Label-Probability-Map
-Batch-Size: 8
-Neighboring Slices: 3
+*Input: 256*256 CT-image (additionally 256*256 label-map during training, downsized from 512x512)
+*Output: 256*256 Label-Probability-Map
+*Batch-Size: 8
+*Neighboring Slices: 3
+*Augmentations: Rotation, Zoom, Translation
+*Postprocessing before saving to .nii file: 
+1. Small segmentations (<16px area) are discarded
+2. Smoothing of the output probability map is applied
 
 Values are configurable in the main code file.
