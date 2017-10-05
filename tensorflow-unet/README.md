@@ -40,7 +40,17 @@ This work uses 2 cascaded UNETs,
 1. Small segmentations (<16px area) are discarded
 2. Smoothing of the output probability map is applied
 
-Values are configurable in the main code file.
+Values are configurable in the main code file experiment.py.
+
+### Environment
+To run this repository, we provide a docker container which has all dependencies preinstalled:
+https://hub.docker.com/r/chrisheinle/lits/
+
+Run the container:
+```bash
+sudo GPU=0 nvidia-docker run -it --volume /optional_data_mount/:/data/ --volume /code_mount/:/code/ --net=host chrisheinle/lits bash
+```
+
 
 ### Step-By-Step
 1. Clone this repo
