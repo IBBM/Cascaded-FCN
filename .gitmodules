@@ -1,3 +1,6 @@
 [submodule "3DCRF-python"]
 	path = 3DCRF-python
 	url = git://github.com/mbickel/DenseInferenceWrapper
+[submodule "tensorflow-u-net"]
+	path = tensorflow-u-net
+	url = https://github.com/FelixGruen/tensorflow-u-net.git
