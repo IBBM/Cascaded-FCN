@@ -1,5 +1,5 @@
 # Cascaded-FCN #
-This repository contains the pre-trained models for a Cascaded-FCN that segments the liver and its lesions out of axial CT images and a python wrapper for dense 3D Conditional Random Fields 3D CRFs.
+This repository contains the pre-trained models for a Cascaded-FCN in caffe and tensorflow that segments the liver and its lesions out of axial CT images and a python wrapper for dense 3D Conditional Random Fields 3D CRFs.
 
 
 This work was published in MICCAI 2016 paper ([arXiv link](https://arxiv.org/abs/1610.02177)) titled : 
@@ -8,7 +8,7 @@ This work was published in MICCAI 2016 paper ([arXiv link](https://arxiv.org/abs
 Automatic Liver and Lesion Segmentation in CT Using Cascaded Fully Convolutional 
 Neural Networks and 3D Conditional Random Fields
 ```
-
+## Caffe ##
 ### Quick Start ###
 If you want to use our code we offer an docker image, which runs our code and has all dependencies installed including the correct caffe version. After having installed docker and nvidia docker:
 ```
@@ -18,6 +18,8 @@ And than start jupyter notebook and browse to localhost:8888
 ```
 jupyter notebook
 ```
+## Tensorflow ## 
+Please look at Readme and Documentation at https://github.com/FelixGruen/tensorflow-u-net
 ### Citation ###
 
 If you have used these models in your research please use the following BibTeX for citation :
@@ -36,7 +38,30 @@ doi="10.1007/978-3-319-46723-8_48",
 url="http://dx.doi.org/10.1007/978-3-319-46723-8_48"
 }
 ```
-
+```
+@ARTICLE{2017arXiv170205970C,
+   author = {{Christ}, P.~F. and {Ettlinger}, F. and {Gr{\"u}n}, F. and {Elshaera}, M.~E.~A. and 
+	{Lipkova}, J. and {Schlecht}, S. and {Ahmaddy}, F. and {Tatavarty}, S. and 
+	{Bickel}, M. and {Bilic}, P. and {Rempfler}, M. and {Hofmann}, F. and 
+	{Anastasi}, M.~D and {Ahmadi}, S.-A. and {Kaissis}, G. and {Holch}, J. and 
+	{Sommer}, W. and {Braren}, R. and {Heinemann}, V. and {Menze}, B.},
+    title = "{Automatic Liver and Tumor Segmentation of CT and MRI Volumes using Cascaded Fully Convolutional Neural Networks}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1702.05970},
+ primaryClass = "cs.CV",
+ keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Artificial Intelligence},
+     year = 2017,
+}
+```
+```
+@inproceedings{Christ2017SurvivalNetPP,
+  title={SurvivalNet: Predicting patient survival from diffusion weighted magnetic resonance images using cascaded fully convolutional and 3D convolutional neural networks},
+  author={Patrick Ferdinand Christ and Florian Ettlinger and Georgios Kaissis and Sebastian Schlecht and Freba Ahmaddy and Felix Gr{\"{u}n and Alexander Valentinitsch and Seyed-Ahmad Ahmadi and Rickmer Braren and Bjoern H. Menze},
+  booktitle={ISBI},
+  year={2017}
+}
+```
 ### Description ###
 This work uses 2 cascaded UNETs, 
 
